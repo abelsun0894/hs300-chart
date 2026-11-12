@@ -1,0 +1,14 @@
+{
+  "name": "沪深300 K线",
+  "short_name": "沪深300",
+  "description": "沪深300指数K线与MACD，可连续调整周期并画线画框",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

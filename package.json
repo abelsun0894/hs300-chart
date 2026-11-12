@@ -1,0 +1,22 @@
+{
+  "name": "hs300-chart",
+  "private": true,
+  "version": "1.0.0",
+  "description": "沪深300 K线图网页应用（周期滑块、画线画框、两端同步）",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server",
+    "selftest": "node scripts/selftest.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}
